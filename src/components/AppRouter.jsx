@@ -3,7 +3,8 @@ import { BrowserRouter, Routes, Route, } from 'react-router-dom'
 
 import Layout from './Layout.jsx'
 import Home from './Home.jsx'
-import Comp1 from './Comp1.jsx'
+import Comp from './Comp.jsx'
+// import Comp1 from './Comp1.jsx'
 import Comp2 from './Comp2.jsx'
 import About from './About.jsx'
 import NoMatch from './NoMatch.jsx'
@@ -24,7 +25,7 @@ const AppRouter = () => {
             <Routes>
                 <Route path="/" element={<Layout />} >
                     <Route index element={<Home />} />
-                    <Route path="comp1" element={<Comp1 />} />
+                    <Route path="comp1" element={<Comp name='One' />} />
                     <Route path="comp2" element={<Comp2 />} />
                     <Route path="about" element={<About />} />
                     <Route path="*" element={<NoMatch />} />
